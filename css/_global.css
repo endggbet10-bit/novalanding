@@ -1,0 +1,91 @@
+/* Контейнер */
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Акцентный текст */
+.accent {
+    color: var(--accent);
+}
+
+/* Заголовки секций */
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto 60px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+
+.btn--primary {
+    background: var(--accent);
+    color: #000;
+}
+
+.btn--primary:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 0 30px var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+.btn--outline {
+    border: 2px solid var(--border);
+    color: var(--text);
+}
+
+.btn--outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn--small {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    background: var(--accent);
+    color: #000;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn--small:hover {
+    background: var(--accent-hover);
+}
+
+.btn--disabled {
+    background: var(--border);
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+/* Анимация появления (для JS) */
+[data-animate="fade-up"] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate="fade-up"].visible {
+    opacity: 1;
+    transform: translateY(0);
+}

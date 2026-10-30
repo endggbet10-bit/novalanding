@@ -1,0 +1,96 @@
+.reviews {
+    padding: 120px 0;
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.review-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition);
+}
+
+.review-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.review-card__stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.review-card__stars .star {
+    width: 18px;
+    height: 18px;
+    background: var(--border);
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%,
+        79% 91%, 50% 70%, 21% 91%, 32% 57%,
+        2% 35%, 39% 35%
+    );
+}
+
+.review-card__stars .star.filled {
+    background: #fbbf24;
+}
+.review-card__text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+.review-card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.review-card__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-card__name {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.review-card__model {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Мобилка */
+@media (max-width: 992px) {
+    .reviews__grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 80px 0;
+    }
+}

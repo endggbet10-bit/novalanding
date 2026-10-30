@@ -1,0 +1,25 @@
+/* === ПЕРЕМЕННЫЕ === */
+:root {
+    /* Цвета */
+    --bg: #0a0a0a;
+    --bg-card: #141414;
+    --bg-card-hover: #1a1a1a;
+    --text: #ffffff;
+    --text-muted: #888888;
+    --accent: #00ff88;
+    --accent-hover: #00cc6a;
+    --accent-glow: rgba(0, 255, 136, 0.15);
+    --border: #222222;
+
+    /* Шрифты */
+    --font-main: 'Space Grotesk', sans-serif;
+
+    /* Размеры */
+    --container: 1200px;
+    --header-h: 80px;
+    --radius: 16px;
+    --radius-sm: 8px;
+
+    /* Переходы */
+    --transition: 0.3s ease;
+}

@@ -1,0 +1,41 @@
+.stats {
+    padding: 100px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stats__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: center;
+}
+
+.stats__item {
+    padding: 20px;
+}
+
+.stats__number {
+    display: block;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.stats__label {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Мобилка */
+@media (max-width: 768px) {
+    .stats {
+        padding: 60px 0;
+    }
+
+    .stats__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 16px;
+    }
+}

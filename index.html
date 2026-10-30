@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Step Into The Future</title>
+    <meta name="description" content="NOVA — кроссовки нового поколения. Лимитированные дропы, экологичные материалы, футуристичный дизайн.">
+
+    <!-- Шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER / НАВИГАЦИЯ ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">NOVA<span class="accent">.</span></a>
+
+            <nav class="header__nav">
+                <a href="#about" class="header__link">О нас</a>
+                <a href="#products" class="header__link">Каталог</a>
+                <a href="#reviews" class="header__link">Отзывы</a>
+                <a href="#subscribe" class="header__link header__link--cta">Подписаться</a>
+            </nav>
+            
+            <button class="header__cart-btn" id="cartBtn" aria-label="Корзина">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="header__cart-badge" id="cartBadge">0</span>
+            </button>
+
+            <!-- Бургер -->
+            <button class="header__burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="hero">
+            <!-- Three.js canvas вставится сюда -->
+            <canvas id="hero-canvas"></canvas>
+
+            <div class="container hero__content">
+                <p class="hero__subtitle">SS25 COLLECTION</p>
+                <h1 class="hero__title">
+                    STEP INTO<br>
+                    THE <span class="accent">FUTURE</span>
+                </h1>
+                <p class="hero__text">
+                    Кроссовки, которые опережают время.
+                    Лимитированные дропы. Экологичные материалы.
+                    Дизайн из 2030-го.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#products" class="btn btn--primary">Смотреть коллекцию</a>
+                    <a href="#about" class="btn btn--outline">Узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== О БРЕНДЕ ========== -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    Почему <span class="accent">NOVA</span>?
+                </h2>
+                <p class="section-subtitle">
+                    Мы не просто делаем кроссовки. Мы создаём артефакты будущего.
+                </p>
+
+                <div class="about__cards">
+                    <div class="about__card" data-animate="fade-up">
+                        <div class="about__icon">🌿</div>
+                        <h3 class="about__card-title">Эко-материалы</h3>
+                        <p class="about__card-text">
+                            Переработанный океанский пластик и органический хлопок. 
+                            Каждая пара — минус 2 кг CO₂.
+                        </p>
+                    </div>
+
+                    <div class="about__card" data-animate="fade-up">
+                        <div class="about__icon">🔬</div>
+                        <h3 class="about__card-title">Технологии</h3>
+                        <p class="about__card-text">
+                            Пена NovaFoam™ с эффектом памяти. 
+                            Адаптивная подошва подстраивается под твою походку.
+                        </p>
+                    </div>
+
+                    <div class="about__card" data-animate="fade-up">
+                        <div class="about__icon">🔥</div>
+                        <h3 class="about__card-title">Лимитированные дропы</h3>
+                        <p class="about__card-text">
+                            Каждая модель — тираж не более 500 пар. 
+                            Когда закончились — больше не будет.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== КАТАЛОГ ========== -->
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="section-title">
+                    Новый <span class="accent">дроп</span>
+                </h2>
+                <p class="section-subtitle">
+                    SS25 уже здесь. Успей забрать свою пару.
+                </p>
+
+                <div class="products__grid">
+                    <div class="product-card" data-animate="fade-up">
+                        <div class="product-card__img">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" 
+                                 alt="NOVA Phantom" loading="lazy">
+                            <span class="product-card__badge">NEW</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">NOVA Phantom</h3>
+                            <p class="product-card__desc">Чёрный / Неоновый зелёный</p>
+                            <div class="product-card__bottom">
+                                <span class="product-card__price">18 900 ₽</span>
+                                <button class="btn btn--small">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-animate="fade-up">
+                        <div class="product-card__img">
+                            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=80" 
+                                 alt="NOVA Drift" loading="lazy">
+                            <span class="product-card__badge product-card__badge--hot">HOT</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">NOVA Drift</h3>
+                            <p class="product-card__desc">Белый / Серебро</p>
+                            <div class="product-card__bottom">
+                                <span class="product-card__price">21 500 ₽</span>
+                                <button class="btn btn--small">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-animate="fade-up">
+                        <div class="product-card__img">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80" 
+                                 alt="NOVA Eclipse" loading="lazy">
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">NOVA Eclipse</h3>
+                            <p class="product-card__desc">Серый / Электрик</p>
+                            <div class="product-card__bottom">
+                                <span class="product-card__price">16 400 ₽</span>
+                                <button class="btn btn--small">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-animate="fade-up">
+                        <div class="product-card__img">
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80" 
+                                 alt="NOVA Surge" loading="lazy">
+                            <span class="product-card__badge product-card__badge--sold">SOLD OUT</span>
+                        </div>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">NOVA Surge</h3>
+                            <p class="product-card__desc">Красный / Чёрный</p>
+                            <div class="product-card__bottom">
+                                <span class="product-card__price product-card__price--old">24 000 ₽</span>
+                                <button class="btn btn--small btn--disabled" disabled>Распродано</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== СТАТИСТИКА ========== -->
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stats__item" data-animate="fade-up">
+                        <span class="stats__number" data-target="12500">0</span>
+                        <span class="stats__label">Довольных клиентов</span>
+                    </div>
+                    <div class="stats__item" data-animate="fade-up">
+                        <span class="stats__number" data-target="47">0</span>
+                        <span class="stats__label">Городов доставки</span>
+                    </div>
+                    <div class="stats__item" data-animate="fade-up">
+                        <span class="stats__number" data-target="15">0</span>
+                        <span class="stats__label">Моделей в коллекции</span>
+                    </div>
+                    <div class="stats__item" data-animate="fade-up">
+                        <span class="stats__number" data-target="4.9" data-decimal="true">0</span>
+                        <span class="stats__label">Средний рейтинг</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- ========== ОТЗЫВЫ ========== -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">
+                    Что говорят <span class="accent">клиенты</span>
+                </h2>
+
+                <div class="reviews__grid">
+
+                    <!-- Отзыв 1 -->
+                    <div class="review-card" data-animate="fade-up">
+                        <div class="review-card__stars">
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                        </div>
+                        <p class="review-card__text">
+                            «Носил Nike, Adidas, New Balance. NOVA Phantom — 
+                            это другой уровень. Нога как в облаке, а выглядят 
+                            так, что на улице останавливают.»
+                        </p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">А</div>
+                            <div>
+                                <p class="review-card__name">Алексей К.</p>
+                                <p class="review-card__model">NOVA Phantom</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="review-card" data-animate="fade-up">
+                        <div class="review-card__stars">
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                        </div>
+                        <p class="review-card__text">
+                            «Заказала Drift для мужа на ДР. Он сказал, что это 
+                            лучший подарок в его жизни. Теперь хочу себе Eclipse.»
+                        </p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">М</div>
+                            <div>
+                                <p class="review-card__name">Мария С.</p>
+                                <p class="review-card__model">NOVA Drift</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 3 -->
+                    <div class="review-card" data-animate="fade-up">
+                        <div class="review-card__stars">
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star filled"></span>
+                            <span class="star"></span>
+                        </div>
+                        <p class="review-card__text">
+                            «Единственный минус — сложно поймать дроп. 
+                            Surge раскупили за 4 минуты. Но Eclipse успел 
+                            взять, и они огонь.»
+                        </p>
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">Д</div>
+                            <div>
+                                <p class="review-card__name">Дмитрий В.</p>
+                                <p class="review-card__model">NOVA Eclipse</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA / ПОДПИСКА ========== -->
+        <section class="subscribe" id="subscribe">
+            <div class="container subscribe__inner">
+                <h2 class="subscribe__title">
+                    Не пропусти следующий <span class="accent">дроп</span>
+                </h2>
+                <p class="subscribe__text">
+                    Подпишись и получи ранний доступ за 24 часа до официального релиза.
+                </p>
+                <form class="subscribe__form" id="subscribeForm">
+                    <input type="email" 
+                           class="subscribe__input" 
+                           placeholder="Твой email" 
+                           required>
+                    <button type="submit" class="btn btn--primary">
+                        Подписаться
+                    </button>
+                </form>
+                <p class="subscribe__note">
+                    Без спама. Только дропы. Отписка в один клик.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">NOVA<span class="accent">.</span></a>
+                <p class="footer__desc">Кроссовки из будущего.<br>Сделано с 🤍 и кодом.</p>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Навигация</h4>
+                <a href="#about" class="footer__link">О нас</a>
+                <a href="#products" class="footer__link">Каталог</a>
+                <a href="#reviews" class="footer__link">Отзывы</a>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Соцсети</h4>
+                <a href="#" class="footer__link">Telegram</a>
+                <a href="#" class="footer__link">Instagram</a>
+                <a href="#" class="footer__link">VK</a>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__heading">Ещё</h4>
+                <a href="#" class="footer__link">Доставка</a>
+                <a href="#" class="footer__link">Возврат</a>
+                <a href="#" class="footer__link">FAQ</a>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <p>© 2025 NOVA. Все права защищены.</p>
+            <p>Сделал <a href="https://github.com/твойник" class="accent">@yxsh1da</a></p>
+        </div>
+    </footer>
+
+    <!-- Three.js через CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- ========== ОВЕРЛЕЙ И ВЫДВИЖНАЯ КОРЗИНА ========== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer__header">
+            <h3>Ваша корзина</h3>
+            <button class="cart-drawer__close" id="cartClose">&times;</button>
+            </div>
+
+        <div class="cart-drawer__items" id="cartItems">
+            <!-- Сюда JS будет рендерить товары -->
+            <p class="cart-drawer__empty">Корзина пуста 😔</p>
+        </div>
+
+        <div class="cart-drawer__footer">
+            <div class="cart-drawer__total">
+                <span>Итого:</span>
+                <span id="cartTotalSum">0 ₽</span>
+            </div>
+            <button class="btn btn--primary btn--full" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </aside>
+
+    <!-- скрипты -->
+    <script src="js/three-scene.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
